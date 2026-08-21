@@ -1,0 +1,14 @@
+{
+  "_说明": "keywords：触发关键词列表，消息包含任一关键词即回复；reply：回复内容；group_name：监听群名。检测到关键词后随机延迟 reply_delay_min~reply_delay_max 秒发送，且在 reply_interval_minutes 分钟内全局最多只发一条。scroll_to_bottom_interval：每隔多少秒把聊天滚到底部（确保新消息在可视区，0=关闭）；max_empty_ocr_recover：连续多少次 OCR 为空就重定位窗口；manual_open_only：true=不搜索/不打开群，只使用你手动打开并固定在最前的窗口，找不到直接报错。verbose：true=每轮扫描输出当前可见关键词数量，便于排查。修改后保存，重启脚本生效。",
+  "group_name": "测试群",
+  "keywords": ["刘德华收到", "张学友收到"],
+  "reply": "收到",
+  "poll_interval": 5,
+  "reply_delay_min": 10,
+  "reply_delay_max": 20,
+  "reply_interval_minutes": 1,
+  "scroll_to_bottom_interval": 60,
+  "max_empty_ocr_recover": 3,
+  "manual_open_only": true,
+  "verbose": true
+}
